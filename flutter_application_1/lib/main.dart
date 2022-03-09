@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/HomePage.dart';
+import 'package:s1/Home.dart';
 
 
 void main() {
-  runApp(myapp());
+  runApp(MyApp());
 }
 
-
-class myapp extends StatelessWidget {
-
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Augustus',
+      home: Home(),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
-     
-      
     );
   }
 }
