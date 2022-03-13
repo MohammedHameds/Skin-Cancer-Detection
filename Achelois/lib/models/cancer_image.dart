@@ -55,9 +55,9 @@ class _Cancer_ImageState extends State<Cancer_Image> {
   path: image.path,
   numResults: 3,
   //threshold: 0.05,
-  imageMean: 125,
+  imageMean: 127.5,
 
-  imageStd: 125,  
+  imageStd: 127.5,  
 
     );
     setState(() {
@@ -75,7 +75,7 @@ class _Cancer_ImageState extends State<Cancer_Image> {
 
   pickGalleryImage() async {
     //this function to grab the image from gallery
-    var image = await picker.pickImage(source: ImageSource.gallery);
+    var image = await picker.pickImage(source: ImageSource.gallery,maxHeight: 224,maxWidth:244,imageQuality: 10);
     if (image == null) return null;
      print(image);
 
@@ -90,6 +90,7 @@ class _Cancer_ImageState extends State<Cancer_Image> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         title:Container(
           alignment: Alignment.center,
@@ -111,7 +112,11 @@ class _Cancer_ImageState extends State<Cancer_Image> {
       body: Container(
         color: Colors.white,
         child: Container(
+          
+
           margin:EdgeInsets.only(top: 15),
+          
+
           // alignment: Alignment.center,
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
@@ -124,7 +129,7 @@ class _Cancer_ImageState extends State<Cancer_Image> {
                         padding:EdgeInsets.all(10),
                         height :350,
                         width :370,
-                        child: Image.asset('assets/2.gif',fit: BoxFit.fill,),
+                        child: Image.asset('assets/c4.gif',fit: BoxFit.fill,),
 
                       ) 
 
@@ -194,7 +199,7 @@ class _Cancer_ImageState extends State<Cancer_Image> {
                    dialogType: DialogType.INFO,
                     animType: AnimType.BOTTOMSLIDE,
                    title: 'Classification Image',
-                   desc: 'pls sir try to add another image coz our algorithm doesn\'t think this is an image for huan skin ',
+                   desc: 'pls sir try to add another image coz our algorithm doesn\'t think this is an image of huaman skin ',
                    btnCancelOnPress: () { },
                     btnOkOnPress: () {
                           //  pickGalleryImage();

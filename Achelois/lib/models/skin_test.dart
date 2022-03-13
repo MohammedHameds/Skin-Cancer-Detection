@@ -9,7 +9,16 @@ class Skin_Test extends StatefulWidget {
 }
 
 class Skin__TestState extends State<Skin_Test> {
- 
+ deletePref() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      prefs.clear();
+    });
+    print('old data is cleared');
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,7 +66,7 @@ class Skin__TestState extends State<Skin_Test> {
                   ),
 
                   onPressed: () async {
-
+                   deletePref();
                    Navigator.of(context).pushReplacementNamed('cancer');
                   },
                    child: Text('Let\'s go',style : TextStyle ( fontSize: 30,color: Colors.black))
