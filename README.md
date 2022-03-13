@@ -1,2 +1,2 @@
-# test-repo
+# skin cancer detection
 test for team
