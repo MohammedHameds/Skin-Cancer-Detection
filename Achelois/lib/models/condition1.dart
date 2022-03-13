@@ -23,6 +23,7 @@ class _Condition1State extends State<Condition1> {
     return Scaffold(
       appBar: AppBar(
         title:Container(
+         
           alignment: Alignment.center,
           child: Text('itch symptoms',style : TextStyle ( fontSize: 30))
           ),

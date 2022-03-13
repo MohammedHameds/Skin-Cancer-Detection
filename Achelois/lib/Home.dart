@@ -32,83 +32,99 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title:Container(
-          alignment: Alignment.center,
-          child: Text('Home',style : TextStyle ( fontSize: 30))
-          ),
-      ),
+    return Container(
+      child: Scaffold(
+        // appBar: AppBar(
+           
+        // centerTitle: true,
+        // flexibleSpace: Container(
+        //   decoration: BoxDecoration(
+        //       image: DecorationImage(
+        //           image: AssetImage('assets/b1.jpg'),
+        //           fit: BoxFit.fill
+        //       ))),
 
-      drawer: Drawer(),
-        
-        body: Container(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-              Container(
-                margin:EdgeInsets.symmetric(vertical:10),                
-                child: ElevatedButton(
-    
-                  onPressed: (){
-                    Navigator.of(context).pushReplacementNamed('test');
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary:Colors.red,
-                    fixedSize: Size(250, 100),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
-                  ),
-                   child: Text('Make Test',style : TextStyle ( fontSize: 40))
-                   ),
-              ),
+        //   title: Text('Home',style : TextStyle ( fontSize: 30))
+            
+        // ),
+        // drawer: Drawer(),
+          
+          body: Container(
+             decoration: const BoxDecoration( 
+                  image: DecorationImage(
+                 image: AssetImage("assets/b1.jpg"),
+                 fit: BoxFit.cover),),
 
-              Container(
-                margin:EdgeInsets.symmetric(vertical:10),                
-                child: ElevatedButton(
-                  onPressed: () async {
 
-                    Navigator.of(context).pushReplacementNamed('mydata');
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
 
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary:Colors.green,
-                    fixedSize: Size(250, 100),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
-
-                  ),
-                   child: Text('show data',style : TextStyle ( fontSize: 40))
-                   ),
-              ),
-
-              
 
                 Container(
-                margin:EdgeInsets.symmetric(vertical:10),                
-                child: ElevatedButton(
-                  onPressed: () async {
-                    await deletePref();
-                    print('data was cleared successfully');
-                    
+                  margin:EdgeInsets.symmetric(vertical:10),                
+                  child: ElevatedButton(
+      
+                    onPressed: (){
+                      Navigator.of(context).pushReplacementNamed('test');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary:Colors.red,
+                      fixedSize: Size(250, 100),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
+                    ),
+                     child: Text('Make Test',style : TextStyle ( fontSize: 40))
+                     ),
+                ),
 
-                    
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary:Color.fromARGB(255, 43, 132, 235),
-                    fixedSize: Size(250, 100),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
+                Container(
+                  margin:EdgeInsets.symmetric(vertical:10),                
+                  child: ElevatedButton(
+                    onPressed: () async {
 
-                  ),
-                   child: Text('delete data',style : TextStyle ( fontSize: 40))
-                   ),
-              ),
+                      Navigator.of(context).pushReplacementNamed('mydata');
 
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary:Colors.green,
+                      fixedSize: Size(250, 100),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
+
+                    ),
+                     child: Text('show data',style : TextStyle ( fontSize: 40))
+                     ),
+                ),
 
                 
-            ]),
-          ),
-        )
 
+                  Container(
+                  margin:EdgeInsets.symmetric(vertical:10),                
+                  child: ElevatedButton(
+                    onPressed: () async {
+                      await deletePref();
+                      print('data was cleared successfully');
+                      
+
+                      
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary:Color.fromARGB(255, 43, 132, 235),
+                      fixedSize: Size(250, 100),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
+
+                    ),
+                     child: Text('delete data',style : TextStyle ( fontSize: 40))
+                     ),
+                ),
+
+
+                  
+              ]),
+            ),
+          )
+
+      ),
     );
   }
 }

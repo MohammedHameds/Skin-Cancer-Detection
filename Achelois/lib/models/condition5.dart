@@ -67,7 +67,7 @@ class _Condition5State extends State<Condition5> {
                   onPressed: () async {
                     Timing = 'Minutes to Hours';
                    await savePref();
-                   Navigator.of(context).pushReplacementNamed('home');
+                   Navigator.of(context).pushReplacementNamed('mydata');
                   },
                    child: Text('Minutes to Hours',style : TextStyle ( fontSize: 30,color: Colors.black))
                    ),
@@ -86,7 +86,7 @@ class _Condition5State extends State<Condition5> {
                   onPressed: () async {
                     Timing = 'Days to Weeks';
                    await savePref();
-                   Navigator.of(context).pushReplacementNamed('home');
+                   Navigator.of(context).pushReplacementNamed('mydata');
                   },
                    child: Text('Days to Weeks',style : TextStyle ( fontSize: 30,color: Colors.black))
                    ),
@@ -105,7 +105,7 @@ class _Condition5State extends State<Condition5> {
                   onPressed: () async {
                     Timing = 'Weeks to Months';
                    await savePref();
-                   Navigator.of(context).pushReplacementNamed('home');
+                   Navigator.of(context).pushReplacementNamed('mydata');
                   },
                    child: Text('Weeks to Months',style : TextStyle ( fontSize: 30,color: Colors.black))
                    ),
@@ -124,7 +124,7 @@ class _Condition5State extends State<Condition5> {
                   onPressed: () async {
                     Timing = 'Months to Years';
                    await savePref();
-                   Navigator.of(context).pushReplacementNamed('home');
+                   Navigator.of(context).pushReplacementNamed('mydata');
                   },
                    child: Text('Months to Years',style : TextStyle ( fontSize: 30,color: Colors.black))
                    ),
@@ -143,7 +143,7 @@ class _Condition5State extends State<Condition5> {
                   onPressed: () async {
                     Timing = 'Recurring Episodes';
                    await savePref();
-                   Navigator.of(context).pushReplacementNamed('home');
+                   Navigator.of(context).pushReplacementNamed('mydata');
                   },
                    child: Text('Recurring Episodes',style : TextStyle ( fontSize: 30,color: Colors.black))
                    ),
