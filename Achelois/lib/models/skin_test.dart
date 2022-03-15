@@ -72,6 +72,18 @@ class Skin__TestState extends State<Skin_Test> {
                    child: Text('Let\'s go',style : TextStyle ( fontSize: 30,color: Colors.black))
                    ),
               ),
+              Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.only(top: 30),
+                    child: Row(
+                      mainAxisAlignment:MainAxisAlignment.center,
+                      children: [
+                      Icon(Icons.warning_amber_sharp),
+                      SizedBox(width: 3),
+                      Text('work in progress',style : TextStyle ( fontSize:10,color: Colors.black)),
+                    ],)
+                    // child: Text('our algorithm is under construction ',style : TextStyle ( fontSize:10,color: Colors.black)),
+                  ),
 
             ]),
           ),

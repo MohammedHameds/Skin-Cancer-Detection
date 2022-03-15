@@ -52,18 +52,19 @@ class _HomeState extends State<Home> {
           body: Container(
              decoration: const BoxDecoration( 
                   image: DecorationImage(
-                 image: AssetImage("assets/b1.jpg"),
+                 image: AssetImage("assets/b2.jpg"),
                  fit: BoxFit.cover),),
 
 
             child: Center(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                
+                // mainAxisAlignment: MainAxisAlignment.center,
                 children: [
 
-
+                
                 Container(
-                  margin:EdgeInsets.symmetric(vertical:10),                
+                  margin:EdgeInsets.only(bottom: 10,top: 150),                
                   child: ElevatedButton(
       
                     onPressed: (){
@@ -111,15 +112,37 @@ class _HomeState extends State<Home> {
                     style: ElevatedButton.styleFrom(
                       primary:Color.fromARGB(255, 43, 132, 235),
                       fixedSize: Size(250, 100),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
-
-                    ),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)) ),
                      child: Text('delete data',style : TextStyle ( fontSize: 40))
                      ),
                 ),
 
+                Container(
+                  margin:EdgeInsets.symmetric(vertical:10),                
+                  child: ElevatedButton(
+                    onPressed: ()  {
+                    Navigator.of(context).pushReplacementNamed('about'); 
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary:Color.fromARGB(255, 235, 222, 43),
+                      fixedSize: Size(250, 100),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
 
-                  
+                    ),
+                     child: Text('about us',style : TextStyle ( fontSize: 40))
+                     ),
+                ),
+
+                Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.only(top: 30),
+                    child: Text('Achelois v1.3 demo',style : TextStyle ( fontSize:10,color: Colors.white)),
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.only(top: 3),
+                    child: Text('work in progress',style : TextStyle ( fontSize:10,color: Colors.white)),
+                  )
               ]),
             ),
           )
