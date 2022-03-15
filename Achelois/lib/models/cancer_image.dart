@@ -75,7 +75,7 @@ class _Cancer_ImageState extends State<Cancer_Image> {
 
   pickGalleryImage() async {
     //this function to grab the image from gallery
-    var image = await picker.pickImage(source: ImageSource.gallery,maxHeight: 224,maxWidth:244,imageQuality: 10);
+    var image = await picker.pickImage(source: ImageSource.gallery,maxHeight: 224,maxWidth:244);
     if (image == null) return null;
      print(image);
 
@@ -211,7 +211,7 @@ class _Cancer_ImageState extends State<Cancer_Image> {
                      print('no image');
                    }
                    else{
-                      Navigator.of(context).pushReplacementNamed('condition1');
+                      Navigator.of(context).pushReplacementNamed('humanbody');
                    }
                   
                   },

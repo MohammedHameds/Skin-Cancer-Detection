@@ -64,7 +64,7 @@ class _Condition2State extends State<Condition2> {
                   onPressed: () async {
                     fever = 'Yes';
                    await savePref();
-                   Navigator.of(context).pushReplacementNamed('condition3');
+                   Navigator.of(context).pushReplacementNamed('condition5');
                   },
                    child: Text('Yes',style : TextStyle ( fontSize: 30,color: Colors.black))
                    ),
@@ -83,7 +83,7 @@ class _Condition2State extends State<Condition2> {
                   onPressed: () async {
                     fever = 'No';
                    await savePref();
-                   Navigator.of(context).pushReplacementNamed('condition3');
+                   Navigator.of(context).pushReplacementNamed('condition5');
                   },
                    child: Text('No',style : TextStyle ( fontSize: 30,color: Colors.black))
                    ),

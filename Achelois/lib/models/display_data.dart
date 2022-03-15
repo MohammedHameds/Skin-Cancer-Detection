@@ -126,10 +126,7 @@ void initState() {
                    child: Text('Try new test',style : TextStyle ( fontSize: 30))
                    ),
               ),
-
-              
-
-                
+             
             ]),
           ),
         

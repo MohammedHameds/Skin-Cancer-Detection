@@ -29,7 +29,7 @@ class _Condition1State extends State<Condition1> {
           ),
           leading: IconButton(
             onPressed: (){
-              Navigator.of(context).pushReplacementNamed('cancer');
+              Navigator.of(context).pushReplacementNamed('condition3');
             }, icon: Icon(Icons.arrow_back_outlined)
             ),
             actions: [

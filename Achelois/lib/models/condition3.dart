@@ -28,7 +28,7 @@ class _Condition3State extends State<Condition3> {
           ),
           leading: IconButton(
             onPressed: (){
-              Navigator.of(context).pushReplacementNamed('condition2');
+              Navigator.of(context).pushReplacementNamed('humanbody');
             }, icon: Icon(Icons.arrow_back_outlined)
             ),
             actions: [
@@ -66,7 +66,7 @@ class _Condition3State extends State<Condition3> {
                   onPressed: () async {
                     affected_area = 'Single Lesion';
                     await savePref();
-                    Navigator.of(context).pushReplacementNamed('condition4');
+                    Navigator.of(context).pushReplacementNamed('condition1');
                   
                   },
                   child:Row(
@@ -97,7 +97,7 @@ class _Condition3State extends State<Condition3> {
                   onPressed: () async {
                     affected_area = 'Limited Area';
                     await savePref();
-                    Navigator.of(context).pushReplacementNamed('condition4');
+                    Navigator.of(context).pushReplacementNamed('condition1');
                   },
                   child:Row(
                     
@@ -127,7 +127,7 @@ class _Condition3State extends State<Condition3> {
                   onPressed: () async {
                     affected_area = 'Widespread';
                     await savePref();
-                    Navigator.of(context).pushReplacementNamed('condition4');
+                    Navigator.of(context).pushReplacementNamed('condition1');
                   },
                   child:Row(
                     

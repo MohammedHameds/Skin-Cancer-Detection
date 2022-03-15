@@ -30,7 +30,7 @@ class _Condition5State extends State<Condition5> {
           leading: IconButton(
             onPressed: (){
 
-              Navigator.of(context).pushReplacementNamed('condtion4');
+              Navigator.of(context).pushReplacementNamed('condition2');
             }, icon: Icon(Icons.arrow_back_outlined)
             ),
             actions: [
