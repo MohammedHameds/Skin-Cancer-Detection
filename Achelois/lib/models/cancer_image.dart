@@ -53,7 +53,7 @@ class _Cancer_ImageState extends State<Cancer_Image> {
   classifyImage(File image) async {
     var output = await Tflite.runModelOnImage(
   path: image.path,
-  numResults: 3,
+  numResults: 1,
   //threshold: 0.05,
   imageMean: 127.5,
 
