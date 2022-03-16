@@ -1,3 +1,1 @@
-Benign
-Malignant
-Not skin image
+skin
