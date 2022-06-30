@@ -20,7 +20,7 @@ It has 7 different classes of skin lesion which are listed below:
 6. Actinic Keratoses (Akiec)
 7. Vascular Lesions (Vasc)
 
-![Original Picture](https://raw.githubusercontent.com/MohammedHameds/skin-cancer-detection/main/Machine%20Learning/images/skin%20types.png?token=GHSAT0AAAAAABSJ6I6LBSS3CZRPNAGA3HROYV5X2JA)
+![Original Picture](https://raw.githubusercontent.com/MohammedHameds/skin-cancer-detection/main/Machine%20Learning/images/skin%20types.png)
 
 Melanocytic nevi, keratosis, vascular and dermatofibroma are benign lesions
 Melanoma, basal cell carcinoma and actinic keratosis are malignant lesions
@@ -34,5 +34,5 @@ Our Deep learning CNN model has been trained with 10015 pre-determined skin canc
 # Results
 Our DenseNet 21 model achieved 95% accuracy on our training and 85% accuracy on test after 20 epochs on the classification task.
 
-![Original Picture](https://raw.githubusercontent.com/MohammedHameds/skin-cancer-detection/main/Machine%20Learning/images/results.png?token=GHSAT0AAAAAABSJ6I6LN5MSRZSVQOHGWLRQYV5XZ3Q)
+![Original Picture](https://raw.githubusercontent.com/MohammedHameds/skin-cancer-detection/main/Machine%20Learning/images/results.png)
 
