@@ -20,7 +20,7 @@ It has 7 different classes of skin lesion which are listed below:
 6. Actinic Keratoses (Akiec)
 7. Vascular Lesions (Vasc)
 
-![Original Picture](https://raw.githubusercontent.com/MohammedHameds/skin-cancer-detection/main/Machine%20Learning/images/skin%20types.png?token=GHSAT0AAAAAABSJ6I6KI2YA6F5ZDNXKMV4WYV5YEHA)
+![Original Picture](https://raw.githubusercontent.com/MohammedHameds/skin-cancer-detection/main/Machine%20Learning/images/types%20of%20skin%20cancer.png?token=GHSAT0AAAAAABSJ6I6L2HA6MWJBJT6C42VUYV5YLCQ)
 
 Melanocytic nevi, keratosis, vascular and dermatofibroma are benign lesions
 Melanoma, basal cell carcinoma and actinic keratosis are malignant lesions
