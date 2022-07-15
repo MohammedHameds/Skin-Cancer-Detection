@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/login.dart';
 import 'package:flutter_application_1/modules/login_screen/login_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:splashscreen/splashscreen.dart';
@@ -93,7 +94,7 @@ Future<void> parameter_ () async {
   @override
   Widget build(BuildContext context) {
     // return user == null ? LoginScreen() : Home();
-    return LoginScreen() ;
+    return Login() ;
     
     
   }

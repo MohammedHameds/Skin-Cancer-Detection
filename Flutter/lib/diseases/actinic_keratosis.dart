@@ -62,7 +62,6 @@ void initState() {
     return Scaffold(
      
       appBar: AppBar(
-        // title: Text('augustus'),
         leading: IconButton(
             onPressed: (){
               if (diseases_or_test == 'diseases'){

@@ -6,6 +6,7 @@ import 'package:flutter_application_1/custom_shape.dart';
 import 'package:flutter_application_1/diseases/diseases.dart';
 import 'package:flutter_application_1/doctor/doctor_home.dart';
 import 'package:flutter_application_1/history/history.dart';
+import 'package:flutter_application_1/login.dart';
 import 'package:flutter_application_1/modules/login_screen/login_screen.dart';
 import 'package:flutter_application_1/skin_test/1-test_home_page.dart';
 
@@ -298,7 +299,7 @@ class _HomeState extends State<Home> {
              child: ElevatedButton(
                onPressed: () {
                 Navigator.of(context).pop();
-                Navigator.push(context,MaterialPageRoute(builder: (context) => LoginScreen()),);
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Login()),);
                },
                style: ElevatedButton.styleFrom(
                       primary:Colors.blue,
